@@ -43,15 +43,14 @@ export default function Home() {
           <Tab.Navigator>
             <Tab.Screen name="General" component={EliminarGeneral} />
             <Tab.Screen name="Planta de Rectificadores" component={EliminarPR} />
+            <Tab.Screen name="Rectificadores" component={EliminarRectificadores} />
             <Tab.Screen name="Baterías" component={EliminarBaterias} />
             <Tab.Screen name="Producción BCOS" component={EliminarPB} />
             <Tab.Screen name="CA" component={EliminarCA} />
             <Tab.Screen name="Transformadores" component={EliminarTransformadores} />
             <Tab.Screen name="GES" component={EliminarGES} />
             <Tab.Screen name="Sub GES" component={EliminarTGES} />
-            <Tab.Screen name="Rectificadores" component={EliminarRectificadores} />
           </Tab.Navigator>
-
         </View>
       </View>
     </View>

@@ -10,9 +10,9 @@ import {
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+// Constante 'urlGral' que almacena la direccion URL donde se aloja el proyecto.
+// El puerto de comunicación por donde se realiza la comunicación entre el servidor de Back-End de Node.js y el Front-End de React Native.
 const urlGetG = 'http://192.168.0.12:4000/CA';
-// const urlGetG = 'http://192.168.43.238:4000/CA';
 
 
 export default class ScreenEliminarG extends Component {

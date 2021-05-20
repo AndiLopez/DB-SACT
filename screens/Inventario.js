@@ -812,13 +812,14 @@ const columns27 = [
     },
 ]
 
+// Constante 'url' que almacena la direccion URL. La IP http://192.168.0.12 es donde se aloja el proyecto.
+// El puerto de comunicación por donde se realiza la comunicación entre el servidor de Back-End de Node.js y el Front-End de React Native.
+
+// Solo e necesario cambiar la IP o en su caso el nuevo HOST donde se aloja la aplicación en el servidor
 const url = 'http://192.168.0.12:4000/1';
 const url1 = 'http://192.168.0.12:4000/1.1';
 const url2 = 'http://192.168.0.12:4000/1.2';
 
-// const url = 'http://192.168.43.238:4000/1';
-// const url1 = 'http://192.168.43.238:4000/1.1';
-// const url2 = 'http://192.168.43.238:4000/1.2';
 
 export default class Inventario extends Component {
     constructor() {

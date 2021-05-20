@@ -4,6 +4,7 @@
   "scripts": {
     "start": "expo start",
     "START": "node src/index.js",
+    "build": "expo start build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -24,6 +25,7 @@
     "expo-status-bar": "~1.0.4",
     "express": "^4.17.1",
     "mysqli": "^3.0.11",
+    "node": "^16.1.0",
     "react": "16.13.1",
     "react-data-table-component": "^6.11.7",
     "react-dom": "16.13.1",

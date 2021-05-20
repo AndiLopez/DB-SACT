@@ -5,7 +5,7 @@ var app = express();
 const mysql = require('mysql');
 const { response } = require('express');
 
-// -------- Datos de Conexión a la Base de datos MySQL en la Nuve------------
+// -------- Datos de Conexión a la Base de datos MySQL en la Nube------------
 // se cambia el nombre de la base de datos por el nombre donde se alojará ahora la nuva DB instalada en el servidor
 
 const db = mysql.createConnection({

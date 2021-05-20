@@ -5,7 +5,7 @@ import Home from './screens/Home';
 import Inventario from './screens/Inventario';
 import Busqueda from './screens/Busqueda';
 import MenuInsert from './screens/MenuInsert';
-import MenuUpdate from './screens/MenuUpdate';
+import MenuDelete from './screens/MenuDelete';
 
 const Drawer = createDrawerNavigator();
 
@@ -17,7 +17,7 @@ export default function App() {
         <Drawer.Screen name="Búsqueda rápida" component={Busqueda} />
         <Drawer.Screen name="Inventario de Centrales" component={Inventario} />
         <Drawer.Screen name="Agregar Centrales" component={MenuInsert} />
-        <Drawer.Screen name="Eliminar Datos" component={MenuUpdate} />
+        <Drawer.Screen name="Eliminar Datos" component={MenuDelete} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

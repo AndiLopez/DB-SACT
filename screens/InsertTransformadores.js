@@ -11,9 +11,11 @@ import {
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const baseUrl = 'http://192.168.0.12:4000/1.8';
-// const baseUrl = 'http://192.168.43.238:4000/1.8';
+// Constante 'urlGral' que almacena la direccion URL. La IP http://192.168.0.12 es donde se aloja el proyecto.
+// El puerto de comunicación por donde se realiza la comunicación entre el servidor de Back-End de Node.js y el Front-End de React Native.
 
+// Solo e necesario cambiar la IP o en su caso el nuevo HOST donde se aloja la aplicación en el servidor
+const baseUrl = 'http://192.168.0.12:4000/1.8';
 
 export default class ScreenInsert extends Component {
     constructor() {
