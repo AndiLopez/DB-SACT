@@ -1,21 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import Home from './screens/Home';
+import Inventario from './screens/Inventario';
+import Busqueda from './screens/Busqueda';
+import MenuInsert from './screens/MenuInsert';
+import MenuUpdate from './screens/MenuUpdate';
+
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="Búsqueda rápida" component={Busqueda} />
+        <Drawer.Screen name="Inventario de Centrales" component={Inventario} />
+        <Drawer.Screen name="Agregar Centrales" component={MenuInsert} />
+        <Drawer.Screen name="Eliminar Datos" component={MenuUpdate} />
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// Autor de código Ing. de Software Andrea Cecilia López González
